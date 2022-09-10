@@ -1,0 +1,14 @@
+<h5>Multiple</h5>
+<form [formGroup]="formdata">
+  <span class="p-fluid">
+    <p-autoComplete
+      formcon
+      formControlName="country"
+      [suggestions]="filteredCountries"
+      (completeMethod)="filterCountry($event)"
+      field="name"
+      [multiple]="true"
+    >
+    </p-autoComplete>
+  </span>
+</form>
